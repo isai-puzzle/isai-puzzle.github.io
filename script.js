@@ -29,6 +29,7 @@ let options = {
     "Spiderhead",
     "Spiderman",
     "Serendipity",
+    "Hitch",
   ],
 };
 
@@ -128,7 +129,7 @@ const initializer = () => {
             winCount += 1;
             //if winCount equals word lenfth
             if (winCount == charArray.length) {
-              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p><p> But the game was not for the clue, you're gonna have to look deeper into the website, and as a programmer and a software graduate, I guess you should figure out where I could have hidden the last clue.</p>`;
               //block all buttons
               blocker();
             }
@@ -141,7 +142,7 @@ const initializer = () => {
         drawMan(count);
         //Count==6 because head,body,left arm, right arm,left leg,right leg
         if (count == 6) {
-          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</p>`;
+          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!! You can try again but its different word each time</p>`;
           blocker();
         }
       }

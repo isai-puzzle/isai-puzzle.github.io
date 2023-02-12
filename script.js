@@ -129,7 +129,7 @@ const initializer = () => {
             winCount += 1;
             //if winCount equals word lenfth
             if (winCount == charArray.length) {
-              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p><p> But the game was not for the clue, you're gonna have to look deeper into the website, and as a programmer and a software graduate, I guess you should figure out where I could have hidden the last clue.</p>`;
+              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p><p> But the game was not for the clue, you're gonna have to look deeper into the website, and as a programmer and a software graduate, I guess you should figure out where I could have hidden the last clue. <br> (Hint: you can try with mobile itself If not then use a laptop for it) </p>`;
               //block all buttons
               blocker();
             }
